@@ -3,7 +3,7 @@ body {
   margin: auto;
   position: relative;
 }
-
+v
 html, body {
   overflow-x: hidden;
 }
@@ -424,42 +424,78 @@ footer a {
 
 /*********** media ***********/
 
+
+/*********** telephone ***********/
+
+@media screen and (max-width: 767px) {
+
+  header {
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .logo {
+    width: 61px;
+    margin-top: 20px;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+}
+
+
+
 /*********** tablette ***********/
 
 @media screen and (max-width: 991px) {
+  header {
+    margin : 0px 50px 0px 50px;
+    padding : 0px;
+  }
+
+  main {
+    margin : 0px 50px 0px 50px;
+    padding : 0px;
+  }
+
+  .filtre-btn {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+
   .box-hebergement-populaire {
     display: flex;
     flex-direction: column;
   }
 
   .box-hebergement {
-    width: 90%;
-    margin: 25px 25px 25px 25px;
+    width: 95%;
   }
 
   .box-populaire {
-    width: 90%;
-    margin: 25px 25px 25px 25px;
+    width: 95%;
   }
 
   .big-box-2 {
     display: flex;
     flex-direction: row;
+    height: 200px;
   }
 
   .card-populaire{
     width: 33%;
-  }
-}
-/*********** portable ***********/
-
-@media screen and (max-width: 767px) {
-
-  header {
-    flex-direction: column;
-    padding: 20px;
-    width: 100%;
-    align-items: center;
+    height: 160px;
+    margin-top: 20px
   }
 
+  footer {
+    margin : 50px 50px 0px 50px;
+    padding : 0px 0px 25px 0px;
+  }
 }

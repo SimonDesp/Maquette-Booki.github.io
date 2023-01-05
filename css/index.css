@@ -153,16 +153,35 @@ input::placeholder {
 
 .search-button {
   display:none;
+	width: 50px;
+	height: 50px;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid #0065FC;
+	border-radius: 0 15px 15px 0;
+	cursor: pointer;
+	background-color: #0065FC;
 }
 
+.btn-search-mobile {
+	display: none;
+	max-width: 60px;
+}
+
+
 /*********** filtre ***********/
+
+.big-box-filtre{
+  display: flex;
+  align-items: baseline;
+}
 
 .box-filtre{
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: left;
-  margin-bottom: 15px
+  margin-bottom: 15px;
 }
 
 .filtre-btn {
@@ -424,32 +443,6 @@ footer a {
 
 /*********** media ***********/
 
-
-/*********** telephone ***********/
-
-@media screen and (max-width: 767px) {
-
-  header {
-    flex-direction: column;
-    padding: 0px;
-  }
-
-  .logo {
-    width: 61px;
-    margin-top: 20px;
-  }
-
-  nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    cursor: pointer;
-  }
-
-}
-
-
-
 /*********** tablette ***********/
 
 @media screen and (max-width: 991px) {
@@ -466,7 +459,7 @@ footer a {
   .filtre-btn {
     display: flex;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 5px;
   }
 
   .box-hebergement-populaire {
@@ -485,17 +478,194 @@ footer a {
   .big-box-2 {
     display: flex;
     flex-direction: row;
-    height: 200px;
+    height: 240px;
   }
 
   .card-populaire{
     width: 33%;
-    height: 160px;
+    height: auto;
     margin-top: 20px
+  }
+
+  .card-populaire h3 {
+
+    margin: 2px 2px 2px 2px;
+  }
+
+  .card-populaire p {
+
+    margin: 15px 2px 2px 2px;
   }
 
   footer {
     margin : 50px 50px 0px 50px;
     padding : 0px 0px 25px 0px;
+  }
+}
+
+/*********** telephone ***********/
+
+@media screen and (max-width: 767px) {
+
+  header {
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px 0px 0px 20px;
+  }
+
+  .logo {
+    width: 61px;
+    margin-top: 40px;
+  }
+
+  nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  .search p {
+    margin: 0px 0px 0px 24px;
+  }
+
+  .search h1 {
+    padding: 10px 50px 0px 25px;
+  }
+
+  .formula {
+    margin-left: 5%;
+  }
+
+  .search-French {
+    display: none;
+  }
+
+  .search-button {
+    display: flex;
+  }
+
+  i.fas.fa-search {
+    color: #fff;
+    font-size: 17px;
+  }
+
+  .fa-map-marker-alt {
+    height: 18px;
+  }
+
+  .big-box-filtre {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .titre-filtre {
+    margin-left: 23px;
+  }
+
+  .box-filtre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .filtre-btn {
+    font-size: 11px;
+    margin-left: 0px;
+  }
+
+  .box-info {
+    margin-left: 20px;
+  }
+
+  .box-hebergement-populaire {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .box-populaire{
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .big-box-2 {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card-populaire {
+    width: 100%;
+    height: 135px;
+    margin-top: 15px;
+    margin-bottom: 0px;
+  }
+
+  .box-hebergement{
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .big-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-hebergement {
+    height: 235px;
+    margin-top: 10px;
+  }
+
+  .card-hebergement img {
+    height: 140px;
+  }
+
+  .card-hebergement h3 {
+    margin-top: 10px;
+  }
+
+  .afficher {
+    display: none;
+  }
+
+  .box-activite {
+    margin-left: 20px;
+    width: 100%;
+  }
+
+  .big-box-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-activite {
+    width: 100%;
+    height: 180px;
+  }
+
+  .card-activite h2 {
+    font-size: 16px;
+  }
+
+  .card-activite img {
+    height: 130px;
+  }
+
+  main {
+    margin: 0px 0px 0px 0px;
+  }
+
+  footer {
+    width: 110%;
+    margin: 0px;
+    margin-top: 40px;
+    padding: 0px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .a-propos {
+    margin-left: 35px;
   }
 }

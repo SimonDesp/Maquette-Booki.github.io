@@ -189,6 +189,7 @@ input::placeholder {
   font-weight: bold !important;
   border-radius: 25px;
   background-color: white;
+  color: #000000;
   margin-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -567,11 +568,13 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-left: 10px;
   }
 
   .filtre-btn {
     font-size: 11px;
     margin-left: 0px;
+    color: #000000;
   }
 
   .box-info {

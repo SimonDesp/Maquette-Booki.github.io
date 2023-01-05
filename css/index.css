@@ -3,7 +3,7 @@ body {
   margin: auto;
   position: relative;
 }
-v
+
 html, body {
   overflow-x: hidden;
 }
@@ -189,7 +189,6 @@ input::placeholder {
   font-weight: bold !important;
   border-radius: 25px;
   background-color: white;
-  color: #000000;
   margin-left: 50px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -197,6 +196,25 @@ input::placeholder {
   padding-right: 20px;
 }
 
+.filtre-btn i {
+  color: #000000;
+}
+
+i.fas.fa-money-bill-wave {
+  color: #0065fc;
+}
+
+i.fas.fa-male {
+  color: #0065fc;
+}
+
+i.fas.fa-heart{
+  color: #0065fc;
+}
+
+i.fas.fa-dog{
+  color: #0065fc;
+}
 
 .filtre-btn  .fas {
   margin-right: 10px;
@@ -524,6 +542,12 @@ footer a {
     width: 100%;
     justify-content: space-between;
     cursor: pointer;
+  }
+
+  nav a:hover {
+    color: blue;
+    border-bottom: 2px blue solid;
+    border-top: 0px;
   }
 
   .search p {

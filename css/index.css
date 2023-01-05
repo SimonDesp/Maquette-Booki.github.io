@@ -608,6 +608,7 @@ footer a {
   .box-hebergement-populaire {
     display: flex;
     flex-direction: column-reverse;
+    width: 90%;
   }
 
   .box-populaire{
@@ -666,7 +667,7 @@ footer a {
   }
 
   .card-activite {
-    width: 100%;
+    width: 90%;
     height: 180px;
   }
 

@@ -377,7 +377,6 @@ i.fas.fa-dog{
 
 .box-activite {
   padding: 20px 40px;
-  width: 90%;
 }
 
 .card-activite{
@@ -386,6 +385,7 @@ i.fas.fa-dog{
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
   width: 100%;
+  height: 365px;
 }
 
 .card-activite img{

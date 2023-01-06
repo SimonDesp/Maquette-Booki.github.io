@@ -44,6 +44,7 @@ p {
 a {
   text-decoration: none;
   color:#000000;
+  width: 100%;
 }
 
 img {
@@ -98,66 +99,61 @@ nav {
 /*********** search-bar ***********/
 
 .search {
-  padding: 20px 40px;
+  padding: 0px 40px;
 }
 
-.formula {
+form {
+  margin: 20px;
+  margin-left: 0;
   display: flex;
-  margin-top: 15px;
-  margin-bottom: 20px;
-}
-
-.fa-map-marker-alt {
-  width: 15px;
-  height: 13px;
-  color: #000000;
-  background-color: #F2F2F2;
-  border: 3px #F2F2F2 solid;
-  padding: 13px;
-  border-radius: 12px 0px 0px 12px;
+  align-items: center;
   text-align: center;
-  font-size: 16px;
 }
 
-input::placeholder {
+input[type=text] {
+  width: 200px;
+  height: 13px;
+  border: solid 1px #f2f2f2;
+  padding: 12px;
+}
+
+input[type="submit"],
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0065fc;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  border: solid 1px #f2f2f2;
+  border-left: none;
+  border-radius: 0 15px 15px 0;
+  height: 41px;
+  padding: 0px 15px;
+  cursor: pointer;
+  margin-left: -5px;
+}
+
+.btn {
+  display: none;
+}
+
+#label {
+  background-color: #f2f2f2;
+  height: 8px;
+  border: solid 1px #f2f2f2;
+  border-radius: 15px 0 0 15px;
+  padding: 15px 20px;
+  margin: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#label i {
   color: black;
-  opacity: 1;
-}
-
-.destination {
-  border: 2px #F2F2F2 solid;
-  font-size: 18px;
-  font-weight:bold;
-  width: 240px;
-  text-indent: 10px;
-}
-
-
-.search-French {
-  border-radius: 0 13px 13px 0;
-  background:#0065fc;
-  color: #ffff;
-  border-style: none;
-  font-weight: bold;
-  width: 130px;
-  font-size: 18px;
-}
-
-.search-button {
-  display:none;
-	width: 50px;
-	height: 50px;
-	justify-content: center;
-	align-items: center;
-	border: 1px solid #0065FC;
-	border-radius: 0 15px 15px 0;
-	cursor: pointer;
-	background-color: #0065FC;
-}
-
-.btn-search-mobile {
-	display: none;
-	max-width: 60px;
+  font-size: 16px;
 }
 
 
@@ -383,7 +379,7 @@ i.fas.fa-dog{
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   border-radius: 20px 20px 20px 20px;
   overflow: hidden;
-  width: 23%;
+  width: 100%;
 }
 
 .card-activite img{
@@ -457,13 +453,11 @@ footer a {
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
   header {
-    margin : 0px 50px;
-    padding : 0px;
+    padding : 0px 20px;
   }
 
   main {
-    margin : 0px 50px;
-    padding : 0px;
+    padding : 0px 20px;
   }
 
   .filtre-btn {
@@ -492,9 +486,9 @@ footer a {
   }
 
   .card-populaire{
-    width: 33%;
-    height: auto;
-    margin-top: 20px
+    width: 100%;
+    height: 190px;
+    margin-top: 20px;
   }
 
   .card-populaire h3 {
@@ -508,8 +502,8 @@ footer a {
   }
 
   footer {
-    margin : 50px 50px 0px 50px;
-    padding : 0px 0px 25px 0px;
+    margin : 50px 40px 0px 40px;
+    padding : 15px 0px 25px 0px;
   }
 }
 
@@ -586,10 +580,12 @@ footer a {
   .box-hebergement-populaire {
     display: flex;
     flex-direction: column-reverse;
+    padding: 0px;
   }
 
   .box-populaire{
     border-radius: 0px;
+    width: 100%;
   }
 
   .big-box-2 {
@@ -606,6 +602,7 @@ footer a {
 
   .box-hebergement{
     background-color: #fff;
+    width: 100%;
   }
 
   .big-box {
@@ -641,6 +638,7 @@ footer a {
 
   .card-activite {
     height: 180px;
+    width: 100%;
   }
 
   .card-activite h2 {
@@ -656,5 +654,7 @@ footer a {
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
+    width: 100%;
+    margin: 0px;
   }
 }

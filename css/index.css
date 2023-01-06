@@ -540,8 +540,20 @@ footer a {
     padding: 0px 20px;
   }
 
-  .search-French {
+  input[type="submit"] {
     display: none;
+  }
+
+  .btn {
+    display: block;
+    width: 49px;
+    border-radius: 0 20px 20px 0;
+  }
+
+  .btn i {
+    color: #ffffff;
+    font-size: 10px;
+    font-size: 18px;
   }
 
   .search-button {

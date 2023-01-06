@@ -213,6 +213,7 @@ i.fas.fa-dog{
 
 .filtre-btn:hover {
   background-color: #DEEBFF;
+  cursor: pointer;
 }
 
 /*********** Info ***********/

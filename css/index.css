@@ -373,9 +373,11 @@ i.fas.fa-dog{
 
 /*********** card activite ***********/
 
+
+
 .box-activite {
   padding: 20px 40px;
-  width: 100%;
+  width: 90%;
 }
 
 .card-activite{
@@ -645,6 +647,7 @@ footer a {
 
   .box-activite {
     padding: 0px 20px;
+    width: 100%;
   }
 
   .big-box-3 {

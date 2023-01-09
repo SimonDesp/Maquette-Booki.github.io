@@ -87,8 +87,8 @@ nav a {
 }
 
 nav a:hover {
-  color: blue;
-  border-top: 2px blue solid;
+  color: #0065FC;
+  border-top: 2px #0065FC solid;
 }
 
 nav {
@@ -114,7 +114,7 @@ form {
 
 input[type=text] {
   width: 200px;
-  height: 13px;
+  height: 22px;
   border: solid 1px #f2f2f2;
   padding: 12px;
 }
@@ -131,7 +131,7 @@ input[type="submit"],
   border: solid 1px #f2f2f2;
   border-left: none;
   border-radius: 0 15px 15px 0;
-  height: 41px;
+  height: 50px;
   padding: 0px 15px;
   cursor: pointer;
   margin-left: -5px;
@@ -143,7 +143,7 @@ input[type="submit"],
 
 #label {
   background-color: #f2f2f2;
-  height: 8px;
+  height: 18px;
   border: solid 1px #f2f2f2;
   border-radius: 15px 0 0 15px;
   padding: 15px 20px;
@@ -459,7 +459,11 @@ footer a {
 
 @media screen and (max-width: 991px) and (min-width: 767px) {
   header {
-    padding : 0px 20px;
+    padding : 0px 40px;
+  }
+
+  .logo {
+    margin-left: 20px;
   }
 
   main {
@@ -603,7 +607,7 @@ footer a {
 
   .box-populaire{
     border-radius: 0px;
-    width: 100%;
+    width: auto;
   }
 
   .big-box-2 {
@@ -620,7 +624,7 @@ footer a {
 
   .box-hebergement{
     background-color: #fff;
-    width: 100%;
+    width: auto;
   }
 
   .big-box {
@@ -647,7 +651,7 @@ footer a {
 
   .box-activite {
     padding: 0px 20px;
-    width: 100%;
+    width: auto;
   }
 
   .big-box-3 {
@@ -674,7 +678,7 @@ footer a {
     display: flex;
     flex-direction: column;
     padding: 30px 20px;
-    width: 100%;
+    width: auto;
     margin: 0px;
   }
 }

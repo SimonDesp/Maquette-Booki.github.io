@@ -119,6 +119,16 @@ input[type=text] {
   padding: 12px;
 }
 
+input::placeholder {
+  color: #000000;
+  opacity: 1;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+}
+
 input[type="submit"],
 .btn {
   display: flex;
@@ -547,14 +557,27 @@ footer a {
     padding: 0px 20px;
   }
 
+  .form {
+    width: 100%;
+  }
+
+  #label {
+    width: 10%;
+  }
+
+  input[type="text"]{
+    width: 70%;
+  }
+
   input[type="submit"] {
     display: none;
   }
 
   .btn {
     display: block;
-    width: 49px;
+    width: 20%;
     border-radius: 0 20px 20px 0;
+
   }
 
   .btn i {
@@ -587,6 +610,8 @@ footer a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    width: 100%;
+    margin-right: 50%;
   }
 
   .filtre-btn {
